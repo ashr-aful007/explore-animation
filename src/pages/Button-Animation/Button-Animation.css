@@ -1,0 +1,12 @@
+.btn-animation{
+     border: 2px solid tomato;
+     color: tomato;
+     padding: 10px 20px;
+     background-color: transparent;
+     transition-duration: 500ms;
+     transition-timing-function: ease; /* It starts slow, accelerates in the middle, and then slows down towards the end, creating a smooth and natural motion.*/
+}                                       /*The "ease-in" timing function starts the animation slowly and accelerates as it progresses.*/
+                                        /*The "ease-out" timing function starts the animation quickly and decelerates towards the end.*/
+.btn-animation:hover{
+     transform: scale(1.05);
+}

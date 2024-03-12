@@ -5,6 +5,7 @@ import {
 import Layout from "../layout/Layout";
 import Home from "../../pages/Home/Home";
 import FnAnimation from "../../pages/FnAnimation/FnAnimation";
+import ButtonAnimation from "../../pages/Button-Animation/ButtonAnimation";
 
    const router = createBrowserRouter([
      {
@@ -18,6 +19,10 @@ import FnAnimation from "../../pages/FnAnimation/FnAnimation";
           {
             path: '/fnAnimation',
             element: <FnAnimation></FnAnimation>
+          },
+          {
+            path: '/btnAnimation',
+            element: <ButtonAnimation></ButtonAnimation>
           }
        ]
      }

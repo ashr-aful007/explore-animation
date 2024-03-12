@@ -172,4 +172,5 @@
 
 .box-12:hover{
      transform: rotateY(-45deg) /*we can also use this property for nigative value*/
+                                   /*When we use X wise 90deg for this property */
 }

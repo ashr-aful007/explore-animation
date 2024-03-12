@@ -5,7 +5,7 @@ import Home from "../Home/Home"
 function Navbar() {
   return (
     <div>
-      <div className="navbar bg-base-100">
+      {/* <div className="navbar bg-base-100">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -21,7 +21,12 @@ function Navbar() {
        <Link to="/fnAnimation">Fundamental Animation</Link>
     </ul>
   </div>
-</div>
+</div> */}
+    <div className="flex items-center justify-center gap-8 h-20 ">
+      <Link to="/">Animation</Link>
+      <Link to="/btnAnimation">Button-Animation</Link>
+      <Link to="/fnAnimation">framer-motion</Link>
+    </div>
     </div>
   )
 }
