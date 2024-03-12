@@ -159,4 +159,17 @@
 
 .box-11:hover{
      transform: rotateX(45deg);  /*when we use perspective property it will be smooth way*/
+                                 /* we can use this property for Y exiss also*/
+}
+
+.box-12{
+     background-color: red;
+     height: 150px;
+     width: 150px;
+     transition-duration: 500ms;
+     transition-timing-function: ease;
+}
+
+.box-12:hover{
+     transform: rotateY(-45deg) /*we can also use this property for nigative value*/
 }
