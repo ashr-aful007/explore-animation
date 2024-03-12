@@ -27,6 +27,7 @@ function Navbar() {
       <Link to="/btnAnimation">Button-Animation</Link>
       <Link to="/fnAnimation">framer-motion</Link>
       <Link to="/keyFreamAnimation">keyFreamAnimation</Link>
+      <Link to="/clipPathAnimation">ClipPathAnimation</Link>
     </div>
     </div>
   )

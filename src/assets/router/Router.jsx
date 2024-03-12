@@ -7,6 +7,7 @@ import Home from "../../pages/Home/Home";
 import FnAnimation from "../../pages/FnAnimation/FnAnimation";
 import ButtonAnimation from "../../pages/Button-Animation/ButtonAnimation";
 import KeyFreamAnimation from "../../pages/KeyFreamAnimation/KeyFreamAnimation";
+import ClipPathAnimation from "../../pages/ClipPathAnimation/ClipPathAnimation";
 
    const router = createBrowserRouter([
      {
@@ -28,6 +29,10 @@ import KeyFreamAnimation from "../../pages/KeyFreamAnimation/KeyFreamAnimation";
           {
             path: '/keyFreamAnimation',
             element: <KeyFreamAnimation></KeyFreamAnimation>
+          },
+          {
+            path: '/clipPathAnimation',
+            element: <ClipPathAnimation></ClipPathAnimation>
           }
        ]
      }
