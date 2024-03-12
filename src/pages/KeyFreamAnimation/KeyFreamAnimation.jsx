@@ -7,8 +7,11 @@ function KeyFreamAnimation() {
           <div className='animation-1 ml-6'>box-1</div>
           <div className='animation-2'>box-2</div>
           </div>
-          <div>
-               
+          <div className='main-2 my-6'>
+               <div className='loadingAnimation'>
+                    <div className='glass'></div>
+                    <div className='animation-box'></div>
+               </div>
           </div>
     </div>
   )
