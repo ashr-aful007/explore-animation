@@ -132,4 +132,31 @@
      transform: skew(45deg, 45deg); /*we can use single value like 45deg for skew*/
 }
 
+/* perspective*/
+.skew{
+     perspective: 500px;  /*When we try to move Z exis wise parent div we have must use 
+                                    perspective property*/
+}
+.box-10{
+     background-color: red;
+     height: 150px;
+     width: 150px;
+     transition-duration: 500ms;
+     transition-timing-function: ease;   
+}
 
+.box-10:hover{
+     transform: translateZ(600px);
+}
+
+.box-11{
+     background-color: red;
+     height: 150px;
+     width: 150px;
+     transition-duration: 500ms;
+     transition-timing-function: ease;
+}
+
+.box-11:hover{
+     transform: rotateX(45deg);  /*when we use perspective property it will be smooth way*/
+}
