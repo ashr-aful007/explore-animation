@@ -1,0 +1,135 @@
+.box-1{
+     background-color: red;
+     height: 150px;
+     width: 150px;
+     transition-duration: 500ms;
+     transition-timing-function: ease; /** it's help us to move smooth way*/
+}
+
+.box-1:hover{
+     transform: translate(500px); /*we can use -nagetive value 
+                                   this value help us to move obj nagetive deraction*/                                
+}
+
+
+.box-2{
+     background-color: red;
+     height: 150px;
+     width: 150px;
+     transition-duration: 500ms;
+     transition-timing-function: ease; /** it's help us to move smooth way*/
+}
+
+.main{
+     overflow: hidden;  /*we con use this property for reveal animation*/
+}
+
+.box-2:hover{
+     transform: translateY(500px)  /* we can move this obj X exise diraction with use X*/
+}
+
+.reveal-box{
+     border: 2px solid black;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     overflow: hidden;
+     width: 70%;
+     position: relative;
+}
+
+.box-3{
+     background-color: red;
+     height: 150px;
+     width: 100%;
+     transition-duration: 500ms;
+     transition-timing-function: ease;
+     position: absolute;
+}
+
+.box-3:hover{
+     transform: translateY(150px);
+}
+
+.box-4{
+     background-color: red;
+     height: 150px;
+     width: 120px;
+     transition-duration: 500ms;
+     transition-timing-function: ease; /** it's help us to move smooth way*/
+}
+
+.box-4:hover{
+     transform: scale(2);   /*scale 1 is initial value we can shrink this box with 0.05 value or 0. less*/
+
+}
+
+/*Rotate*/
+.box-5{
+     background-color: red;
+     height: 150px;
+     width: 150px;
+     transition-duration: 500ms;
+     transition-timing-function: ease; 
+}
+
+.box-5:hover{
+     transform: rotate(45deg);
+}
+
+.box-6{
+     background-color: red;
+     height: 150px;
+     width: 150px;
+     transition-duration: 500ms;
+     transition-timing-function: ease; 
+     transform-origin: top; /*transform-origin it's use for which diraction we move*/
+}
+
+.box-6:hover{
+     transform: rotate(80deg);
+}
+
+.box-7{
+     background-color: red;
+     height: 150px;
+     width: 150px;
+     transition-duration: 500ms;
+     transition-timing-function: ease; 
+     transform-origin: top; /*transform-origin it's use for which diraction we move*/
+}
+.rotate{
+     overflow: hidden;
+}
+.box-7:hover{
+     transform: rotate(80deg);
+}
+
+.box-8{
+     background-color: red;
+     height: 150px;
+     width: 150px;
+     transition-duration: 500ms;
+     transition-timing-function: ease; 
+     /* transform-origin: top left;   we can use 40px for select rotation point */
+     /* transform-origin: 100px 100px;  We can define value X and Y Exis */
+     transform-origin: bottom right;
+}
+
+.box-8:hover{
+     transform: rotate(80deg);
+}
+
+.box-9{
+     background-color: red;
+     height: 150px;
+     width: 150px;
+     transition-duration: 500ms;
+     transition-timing-function: ease; 
+}
+
+.box-9:hover{
+     transform: skew(45deg, 45deg); /*we can use single value like 45deg for skew*/
+}
+
+
