@@ -1,0 +1,56 @@
+.animation-1{
+     height: 100px;
+     width: 100px;
+     background-color: red;
+     animation-name: moving;
+     animation-duration: 1000ms;
+     animation-delay: 1s;
+     /* animation-fill-mode: forwards; */
+     animation-iteration-count: infinite;
+     animation-direction: alternate;
+}
+
+@keyframes moving {
+     from{
+          transform: translate(0);
+     }
+     to{
+          transform: translate(500px);
+     }
+}
+
+
+/* animation-2 */
+
+.animation-2{
+     height: 100px;
+     width: 100px;
+     background-color: red;
+     animation-duration: 1000ms;
+     animation-delay: 1s;
+     /* animation-fill-mode: forwards; */
+     animation-iteration-count: infinite;
+     animation-direction: alternate;
+     animation-name: secondMove;
+}
+
+@keyframes secondMove {
+     0%{
+          transform: translate(0);
+          
+     }
+     25%{
+          transform: translate(50px);
+          background-color: blue;
+     }
+     50%{
+          transform: translate(50px, 50px);
+     }
+     75%{
+          transform: translate(50px, -100px);
+     }
+     100%{
+          transform: translate(-100px, -100px);
+     }
+
+}

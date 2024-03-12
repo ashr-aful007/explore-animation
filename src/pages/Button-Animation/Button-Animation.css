@@ -2,11 +2,115 @@
      border: 2px solid tomato;
      color: tomato;
      padding: 10px 20px;
+     position: relative;
      background-color: transparent;
      transition-duration: 500ms;
+     overflow: hidden;
      transition-timing-function: ease; /* It starts slow, accelerates in the middle, and then slows down towards the end, creating a smooth and natural motion.*/
 }                                       /*The "ease-in" timing function starts the animation slowly and accelerates as it progresses.*/
                                         /*The "ease-out" timing function starts the animation quickly and decelerates towards the end.*/
+
+.btn-animation::after{
+     content: '';
+     height: 100%;
+     width: 100%;
+     background-color: tomato;
+     position: absolute;
+     top: 0;
+     right: 0;
+     transition-property: all;
+     transition-duration: 500ms;
+     transition-timing-function: ease;
+     transform: translate(120px);
+     z-index: -1;
+}
+
+
+
 .btn-animation:hover{
      transform: scale(1.05);
+     color: white;
+}
+
+.btn-animation:hover:after{
+     transform: translate(0px);
+}
+
+/* button 2 */
+
+.btn-animation-2{
+     border: 2px solid tomato;
+     color: tomato;
+     padding: 10px 20px;
+     position: relative;
+     background-color: transparent;
+     transition-duration: 500ms;
+     overflow: hidden;
+     transition-timing-function: ease;
+     perspective: 100px;
+}
+
+.btn-animation-2::after{
+     content: '';
+     height: 100%;
+     width: 100%;
+     background-color: white;
+     position: absolute;
+     top: 0;
+     right: 0;
+     transition-property: all;
+     transition-duration: 500ms;
+     transition-timing-function: ease;
+     transform: rotate(-120deg);
+     z-index: -1;
+}
+
+.btn-animation-2:hover{
+     color: white;
+}
+
+
+.btn-animation-2:hover:after{
+     transform: rotate(0deg);
+     background-color: tomato;
+}
+
+
+
+/* button 3 */
+
+.btn-animation-3{
+     border: 2px solid tomato;
+     color: tomato;
+     padding: 10px 20px;
+     position: relative;
+     background-color: transparent;
+     transition-duration: 500ms;
+     overflow: hidden;
+     transition-timing-function: ease;
+     perspective: 100px;
+}
+
+.btn-animation-3::after{
+     content: '';
+     height: 100%;
+     width: 100%;
+     background-color: white;
+     position: absolute;
+     top: 0;
+     right: 0;
+     transition-property: all;
+     transition-duration: 500ms;
+     transition-timing-function: ease;
+     transform: scaleX(1);
+     z-index: -1;
+}
+
+.btn-animation-3:hover{
+     color: white;
+}
+
+.btn-animation-3:hover:after{
+     transform: scaleX(0);
+     background-color: tomato;
 }
