@@ -1,35 +1,45 @@
 import { motion } from "framer-motion"
+import { useRef } from "react"
 
 const parent = {
-   hidden: {opacity: 0, scale: 0.0},
-   visible: {opacity: 1, scale: 1}, 
-}
-const child = {
-   hidden: {opacity: 0, scale: 0.0},
-   visible: {opacity: 1, scale: 1}, 
+   hidden: {opacity: 0, scale: 0.9},
+   visible:{
+      opacity: 0.6,
+      scale:1,
+      transition:{
+        ease: 'easeInOut',
+        duration: 0.25,
+      }
+   },
+   hover: {
+      opacity: 1,
+   },
+
 }
 
+
 function FnAnimation() {
+    const parentRef = useRef(null)
   return (
-    <div className="w-full flex justify-center items-center">
+    <div ref={parentRef} className="w-full size-[500px] flex justify-center items-center">
       <motion.div className="size-64 bg-indigo-500 rounded-lg flex flex-wrap gap-5 p-5 justify-center items-center"
         variants={parent}
         initial = "hidden"   
-        animate= "visible"                                //   repeat: Infinity
-        transition = {{ease: 'easeInOut',duration: 1.5, repeatType: 'reverse', delayChildren: 1, staggerChildren: 1,}}
+        animate= "visible" 
+        whileHover="hover"
+        whileTap="tap"  
+        drag
+        // dragSnapToOrigin
+        dragConstraints={parentRef}
+        whileDrag={{
+           scale: 1.1,
+           boxShadow: '0px 10px 10px #000'
+        }}
+
+        // dragConstraints={{left: -200, right: 200, top: -200, bottom: 200}}
+        // onHoverStart={() => console.log("Hover")} 
+        // onHoverEnd={() => console.log("Hover Ended")}                           //   repeat: Infinity
       > 
-        <motion.div className="size-20 bg-cyan-400 rounded-sm"
-          variants={child}
-        ></motion.div>
-        <motion.div
-          variants={child}
-         className="size-20 bg-cyan-400 rounded-sm"></motion.div>
-        <motion.div
-          variants={child}
-         className="size-20 bg-cyan-400 rounded-sm"></motion.div>
-        <motion.div 
-          variants={child}
-        className="size-20 bg-cyan-400 rounded-sm"></motion.div>
       </motion.div>
     </div>
   )
