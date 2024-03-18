@@ -8,6 +8,7 @@ import FnAnimation from "../../pages/FnAnimation/FnAnimation";
 import ButtonAnimation from "../../pages/Button-Animation/ButtonAnimation";
 import KeyFreamAnimation from "../../pages/KeyFreamAnimation/KeyFreamAnimation";
 import ClipPathAnimation from "../../pages/ClipPathAnimation/ClipPathAnimation";
+import AnimationWithJs from "../../pages/AnimationWIthJS/AnimationWithJs";
 
    const router = createBrowserRouter([
      {
@@ -33,6 +34,10 @@ import ClipPathAnimation from "../../pages/ClipPathAnimation/ClipPathAnimation";
           {
             path: '/clipPathAnimation',
             element: <ClipPathAnimation></ClipPathAnimation>
+          },
+          {
+            path: '/animationWithJs',
+            element: <AnimationWithJs></AnimationWithJs>
           }
        ]
      }
